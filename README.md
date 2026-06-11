@@ -51,32 +51,3 @@ Los reportes generados se guardan en `output/reports/` en formato HTML con el si
 ## Licencia
 
 Proyecto privado del circuito de golf 5aCAT
-
-## Archivos no versionados
-
-Los siguientes archivos / rutas están en `.gitignore` y NO se suben al repositorio. Debes mantener copias locales si las necesitas:
-
-- `data/raw/data.json` — Datos crudos de jugadores y resultados.
-- `data/tournaments/torneos.txt` — Calendario y lista de torneos.
-- `requirements.txt` — Lista local de dependencias (no se comparte por defecto).
-
-Instrucciones prácticas:
-
-1. Coloca tus datos locales en las rutas anteriores para que el script pueda procesarlos.
-
-2. Si necesitas generar o actualizar `requirements.txt` en tu entorno local, ejecuta:
-
-```bash
-pip freeze > requirements.txt
-```
-
-3. Para asegurarte de no subir accidentalmente estos archivos si ya estaban en el índice de git, ejecuta (una sola vez):
-
-```bash
-git rm --cached data/raw/data.json data/tournaments/torneos.txt requirements.txt
-git commit -m "Stop tracking local data and requirements"
-```
-
-4. Si quieres compartir plantillas de datos sin exponer información sensible, crea archivos de ejemplo como `data/raw/data.example.json` y añádelos al repositorio.
-
-Si quieres que añada ejemplos o plantillas de datos, lo hago a continuación.
