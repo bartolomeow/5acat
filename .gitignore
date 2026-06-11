@@ -1,6 +1,52 @@
-# Ignorar todo
-*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Excepto analyze_golf.py
-!analyze_golf.py
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE directories
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output / generated files
+output/
+output/reports/*.html
+
+# Data: ignore large DBs/logs in raw data but keep source JSON tracked
+data/raw/*.sqlite
+data/raw/*.db
+data/raw/*.log
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+.env.local
+
+# Ensure .gitignore itself is not ignored
 !.gitignore
+
+# Archivos que no deben subirse
+data/raw/data.json
+data/tournaments/torneos.txt
+requirements.txt
+.gitignore
