@@ -1,53 +1,16 @@
-# 5aCAT - Golf Tournament Analysis
+# analyze_golf.py — Uso rápido
 
-Sistema de análisis y gestión de resultados de torneos de golf para el circuito 5aCAT.
+Script principal para procesar datos de jugadores y generar reportes HTML.
 
-## Descripción
+Requisitos mínimos:
 
-Este proyecto procesa datos de jugadores y torneos, generando reportes HTML con estadísticas y clasificaciones de participantes en el circuito de golf 5aCAT.
+- Python 3.8+
+- Colocar los datos locales en:
+  - `data/raw/data.json`
+  - `data/tournaments/torneos.txt`
 
-## Estructura del Proyecto
-
-```
-5acat/
-├── src/                      # Código fuente Python
-│   └── analyze_golf.py       # Script principal de análisis
-├── data/                     # Datos del proyecto
-│   ├── raw/                  # Datos crudos (JSON)
-│   │   └── data.json         # Base de datos de jugadores y resultados
-│   └── tournaments/          # Información de torneos
-│       └── torneos.txt       # Listado de torneos del circuito
-├── output/                   # Archivos generados
-│   └── reports/              # Reportes HTML generados
-├── requirements.txt          # Dependencias de Python
-└── README.md                 # Este archivo
-```
-
-## Instalación
-
-1. Clonar el repositorio
-2. Crear un entorno virtual (opcional pero recomendado)
-3. Instalar dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Uso
+Ejecutar:
 
 ```bash
-python src/analyze_golf.py [opciones]
+python src/analyze_golf.py
 ```
-
-## Datos
-
-- **data.json**: Contiene la información de jugadores registrados, sus resultados históricos y estadísticas
-- **torneos.txt**: Lista de torneos del circuito 5aCAT con fechas de celebración
-
-## Salida
-
-Los reportes generados se guardan en `output/reports/` en formato HTML con el siguiente patrón de nombre:
-`resultados_[NOMBRE]_[FECHA]_[HORA].html`
-
-## Licencia
-
-Proyecto privado del circuito de golf 5aCAT
