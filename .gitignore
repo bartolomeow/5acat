@@ -1,0 +1,6 @@
+# Ignorar todo
+*
+
+# Excepto analyze_golf.py
+!analyze_golf.py
+!.gitignore
